@@ -242,6 +242,11 @@ void DFU::usb_req_leak()
   libusb1_no_error_ctrl_transfer(0x80, 6, 0x304, 0x40A, nullptr, 0x40, 1);
 }
 
+void DFU::usb_req_no_leak()
+{
+  libusb1_no_error_ctrl_transfer(0x80, 6, 0x304, 0x40A, nullptr, 0x41, 1);
+}
+
 struct libusb_transfer *
 DFU::libusb1_create_ctrl_transfer(std::vector<uint8_t> &request, int timeout)
 {

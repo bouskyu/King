@@ -79,6 +79,7 @@ public:
   void no_leak();
   void usb_req_leak();
   void usb_req_stall();
+  void usb_req_no_leak();
 
   void send_data(vector<uint8_t> data);
 

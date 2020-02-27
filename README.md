@@ -4,6 +4,10 @@ Port of [@axi0mX's](https://twitter.com/axi0mx) checkm8 exploit ([ipwndfu](https
 
 **Supported devices:**
 
+* `S5L8960X`
+  * `iPhone 5S`
+  * `iPad Mini 2`
+  * `iPad Mini 3`
 * `T7000`
   * `Apple TV (4th generation)`
   * `HomePod`
@@ -30,7 +34,7 @@ Port of [@axi0mX's](https://twitter.com/axi0mx) checkm8 exploit ([ipwndfu](https
 
 ## Windows notes
 
-Requimpents:
+Requirements:
 
 * `libusbK` driver (can be installed with [zadig](https://zadig.akeo.ie/))
 * `libusb` with fixed `MAX_PATH_LENGTH` ([see this PR](https://github.com/libusb/libusb/pull/699))
